@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "357860493490",
+    "firebase_url": "https://open-sesame-59eeb.firebaseio.com",
+    "project_id": "open-sesame-59eeb",
+    "storage_bucket": "open-sesame-59eeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357860493490:android:1f87414ac67b51ee83a1ab",
+        "android_client_info": {
+          "package_name": "com.devc.hyperionmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357860493490-6adftpkd33c5tdeekomv9rs6n408e70h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMy_d2dUaUUE5EoByRnagCX_noVIuBz1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357860493490-ntpall7i82oldhe0eqgp50o3aetfdib9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "357860493490-b556bd0r592jg0idnl6ig6e0gbk8b26o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kingdiamondapps.Open-Sesame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
