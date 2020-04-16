@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/login_background1"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/login_background2"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/login_background3"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/login_background4"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/login_background5"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/login_background6"
+        android:duration="4000"/>
+
+    <item android:drawable="@drawable/login_background7"
+        android:duration="4000"/>
+
+</animation-list>
