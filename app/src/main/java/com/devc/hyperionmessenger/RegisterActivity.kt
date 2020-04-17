@@ -69,6 +69,9 @@ class RegisterActivity : AppCompatActivity() {
             val bitmap = MediaStore.Images.Media.getBitmap(this.contentResolver, photoUri)
             photoview.setImageBitmap(bitmap)
             photo_button.alpha = 0f
+
+
+            //disregard
           /*  val bitmapDrawable = BitmapDrawable(bitmap)
             photo_button.setBackgroundDrawable(bitmapDrawable)
           */
@@ -143,6 +146,10 @@ class RegisterActivity : AppCompatActivity() {
         uuidUser.setValue(user)
             .addOnSuccessListener {
                 Log.d("RegisterActivity", "User added to Firebase Database.")
+
+                val intent = Intent(this, MessagesActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
             }
     }
 }
