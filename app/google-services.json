@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "357860493490-gract5b3ejmv4lllkcdnsf05oj7ortgs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devc.hyperionmessenger",
+            "certificate_hash": "c1c4afd115dff2630081214411c9b9132925b1b2"
+          }
+        },
+        {
           "client_id": "357860493490-6adftpkd33c5tdeekomv9rs6n408e70h.apps.googleusercontent.com",
           "client_type": 3
         }

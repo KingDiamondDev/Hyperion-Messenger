@@ -21,8 +21,8 @@ class registerUFirebase: AppCompatActivity() {
                 return
             }
 
-            Log.d("MainActivity", "Email is: " + email)
-            Log.d("MainActivity", "Password: $password")
+            Log.d("RegisterActivity", "Email is: " + email)
+            Log.d("RegisterActivity", "Password: $password")
 
             //Authenticate with Firebase
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)

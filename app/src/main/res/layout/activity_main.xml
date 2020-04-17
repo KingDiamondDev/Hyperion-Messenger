@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <EditText
         android:id="@+id/username_reg"
@@ -98,6 +98,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photoview"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        app:civ_border_width="4dp"
+        app:civ_border_color="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/photo_button"
+        app:layout_constraintEnd_toEndOf="@+id/photo_button"
+        app:layout_constraintStart_toStartOf="@+id/photo_button"
+        app:layout_constraintTop_toTopOf="@+id/photo_button" />
 
     <TextView
         android:id="@+id/textView"
