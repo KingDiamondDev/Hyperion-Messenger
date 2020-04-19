@@ -1,4 +1,5 @@
 package com.devc.hyperionmessenger
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
@@ -30,6 +31,9 @@ class LoginProcess: AppCompatActivity() {
                         //else if successful
                         Log.d("Main", "Successfully logged user with uid: ${it.result?.user?.uid}")
                         Toast.makeText(this, "Successfully Logged in", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, MessagesActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        startActivity(intent)
                         return@addOnCompleteListener
                     }
                     .addOnFailureListener {

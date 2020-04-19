@@ -111,6 +111,9 @@ class RegisterActivity : AppCompatActivity() {
                 Log.d("Main", "Successfully created user with uid: ${it.result?.user?.uid}")
                 uploadImageToFirebase()
                 Toast.makeText(this, "User successfully created!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MessagesActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
                 return@addOnCompleteListener
             }
             .addOnFailureListener{
@@ -146,12 +149,10 @@ class RegisterActivity : AppCompatActivity() {
         uuidUser.setValue(user)
             .addOnSuccessListener {
                 Log.d("RegisterActivity", "User added to Firebase Database.")
-
-                val intent = Intent(this, MessagesActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
             }
     }
 }
 
-class User(val uid: String, val username: String, val profileImageUrl: String)
+class User(val uid: String, val username: String, val profileImageUrl: String) {
+    constructor() : this("", "", "")
+}

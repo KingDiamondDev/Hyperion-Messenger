@@ -9,7 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MessagesActivity"></activity>
+        <activity android:name=".NewMessages">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MessagesActivity"/>
+        </activity>
+        <activity android:name=".MessagesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".RegisterActivity"
             android:theme="@style/LoginPage">
@@ -19,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginProcess"></activity>
+        <activity android:name=".LoginProcess" />
     </application>
 
 </manifest>
